@@ -139,9 +139,8 @@ button:active {
         padding: 15px;  
         align-items: stretch; /* amplia todos los elementos hijos */
         
-        
+        background-color: yellow;
     }
-   
     .rowTitle{
         justify-content: center; /* Centra el titulo*/
 
@@ -182,10 +181,10 @@ button:active {
     }
    #BMR_div{
    
-    width: 75%;
-    margin: 0 auto;
+      width: 75%;
+      margin: 0 auto;
   
-}
+    }
 
 }
 

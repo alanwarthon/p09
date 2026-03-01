@@ -139,7 +139,6 @@ button:active {
         padding: 15px;  
         align-items: stretch; /* amplia todos los elementos hijos */
         
-        background-color: yellow;
     }
     .rowTitle{
         justify-content: center; /* Centra el titulo*/

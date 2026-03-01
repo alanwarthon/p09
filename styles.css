@@ -1,4 +1,155 @@
 body{
-  background-color: red;
+    background-color :rgb(168, 182, 145);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
   
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+  max-width: 95%;
+  margin: 20px auto; /* "auto" centra este contenedor horizontalmente en la pantalla */
+  padding: 20px;
+}
+
+.rowSexo{
+  
+  display: flex;            /* convierte el contenedor en flex */
+  justify-content: center;
+  gap: 10px;                /* opcional: espacio entre los elementos */
+  padding: 10px 0;  
+}
+
+.fancy-input{
+ 
+  display:flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 220px;
+ 
+}
+
+.fancy-input input{
+  border:none;
+  outline: none;
+  padding: 8px;
+  width: 180px;
+  font-size: 16px;
+}
+
+.fancy-input span{
+  padding: 8px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  color: #555;
+}
+.rowButton{
+  
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+button{
+    background-color: rgba(165, 170, 169, 0.872);
+    width: 150px;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+button:hover {
+    background-color: rgba(140, 145, 144, 0.9);
+}  
+button:active {
+    transform: translateY(2px); /* simula que se hunde */
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+#BMR_div{
+    background-color: white;
+    width:75%;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#BMR_div h5{
+    color:darkblue;
+    text-align: center;
+}
+#levelActivityQuestion p{
+    
+    display:inline-block;
+    width: auto;
+
+
+}
+
+#caloriesPerDay{
+    color:darkblue;
+    text-align: center;
+}
+
+#buttonsQuestion{
+    
+    text-align: center;
+}
+.btnWeight{
+    
+    width: 40%;
+    align-items: center;
+    height: 30px;
+    font-size: small;
+}
+#kcalneeded{
+    color:blue;
+}
+#activityDescription{
+
+    color:gray;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+button {
+  position: relative;
+  z-index: 2; /* más alto */
+}
+.eyes {
+  position: absolute;
+  top: -30px;          /* empieza casi escondido */
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
+  font-size: 24px;
+  transition: transform 0.5s ease; /* animación suave */
+}
+
+.button-wrapper:hover .eyes {
+  transform: translateX(-50%) translateY(0);
+}
+
+#ojo{
+  width: 80px;
+  height: 30px;
 }

@@ -2,10 +2,83 @@
 <html lang="en">  
   <head>
     <title>Project 09</title>
-    <meta chartset="utf-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>Hola</h1>
+    <div class="container"> <!--Contenedor principal-->
+      <div class="row"> <!--Este contenedor de primera fila, llevara el titulo-->
+        <h1>Calculadora de TMB</h1>
+      </div>
+      <form>
+        <div class="rowSexo"> <!--Sexo-->
+          <label>Sexo</label>
+          <input type="radio" name="sex" value="hombre" checked>Hombre
+          <input type="radio" name="sex" value="mujer">Mujer
+        </div>
+        <div class="row"> <!--Edad-->
+          <label>Edad</label>
+          <div class="fancy-input">
+            <input id="txtAge" type="number" min="0" max="120">
+            <span>años</span>
+          </div>
+        </div>
+        <div class="row"> <!--Peso-->
+          <label>Peso</label>
+          <div class="fancy-input">
+            <input id = "txtWeight" type="number" min="0" max="160">
+            <span>kg</span>
+          </div>
+        </div>
+        <div class="row"> <!--Estatura-->
+          <label>Estatura</label>
+          <div class="fancy-input">
+            <input id = "txtHeight" type="number" min="0" max="220">
+            <span>cm</span>
+          </div>
+        </div>
+        <div class="rowButton"> <!--Boton Calcular-->
+          <button type="button" id="btnCalcular">Calcular</button>
+        </div>
+
+        
+      </form>
+      <!--Report-->
+        <div id="BMR_div">
+            <p><strong>TMB (Tasa Metabólica Basal)</strong> Es la cantidad de calorías que tu cuerpo quema en reposo para mantener
+               funciones vitales como la respiración, la circulación y la actividad de los órganos. 
+               Conocer tu TMB ayuda a estimar cuántas calorías necesitas diariamente para mantener, perder o ganar peso..</p>
+            <h5 id="results"></h5>
+            <div id="levelActivityQuestion" style="visibility: hidden">
+                <p>Elige tu nivel de actividad: </p>
+                <select id="options" name="options">
+                    <option value="option0">Elige</option>
+                    <option value="option1">Sedentario</option>
+                    <option value="option2">Ligero</option>
+                    <option value="option3">Moderado</option>
+                    <option value="option4">Intenso</option>
+                    <option value="option5">Muy intenso</option>
+                </select>
+
+                <p id="activityDescription"></p>
+                <h2 id="caloriesPerDay"></h2>
+                <div id="buttonsQuestion">
+                    <button class="btnWeight" id="btnLose">Perder Peso?</button>
+                    <button class="btnWeight" id="btnGain">Ganar Peso?</button>
+                    <h4 id="msgFinal"></h4><h3 id="kcalneeded"></h3>
+                </div>
+                  
+            </div>
+        </div>
+
+        <!--
+        <br><br><br><br><br><br>
+        <div class="button-wrapper">
+          <div class="eyes"><img id="ojo" src="ojo.png"></div>
+          <button id="btnCalcular2">Mira</button>
+        </div>
+        -->
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

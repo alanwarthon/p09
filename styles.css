@@ -15,8 +15,14 @@ body{
   max-width: 95%;
   margin: 20px auto; /* "auto" centra este contenedor horizontalmente en la pantalla */
   padding: 20px;
-}
 
+  
+}
+.rowTitle{
+  
+    display: flex;
+    align-items: center;
+}
 .rowSexo{
   
   display: flex;            /* convierte el contenedor en flex */
@@ -25,6 +31,7 @@ body{
   padding: 10px 0;  
 }
 
+
 .fancy-input{
  
   display:flex;
@@ -32,6 +39,8 @@ body{
   border-radius: 6px;
   overflow: hidden;
   width: 220px;
+ 
+ 
  
 }
 
@@ -123,26 +132,88 @@ button:active {
 }
 
 
+@media (max-width: 600px) {
+    .container {
+       
+        width: 90%; /* casi todo el ancho de la pantalla */
+        padding: 15px;  
+        align-items: stretch; /* amplia todos los elementos hijos */
+        
+        
+    }
+   
+    .rowTitle{
+        justify-content: center; /* Centra el titulo*/
+
+    }
+
+    form{
+      
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .row {
+        flex-direction: column; /* apila elementos en lugar de horizontal */
+        width: 80%;
+       
+    }
+    
+    .fancy-input {
+        width: 100%; /* ocupa todo el ancho del contenedor */
+        
+    }
+    .fancy-input input {
+        width: 100%; /* input ocupa todo el ancho del fancy-input */
+        
+    }
+
+    .rowButton {
+        padding: 15px 0; /* espacio entre filas */
+        width: 80%;
+    }
+    button {
+        width: 100%; /* botón ocupa todo el ancho del contenedor */
+        height: 50px; /* más alto para ser más fácil de tocar */
+        font-size: 18px; /* letra más grande */
+        
+    }
+   #BMR_div{
+   
+    width: 75%;
+    margin: 0 auto;
+  
+}
 
 
 
 
 
+
+
+
+
+
+
+
+/*
 .button-wrapper {
   position: relative;
   display: inline-block;
 }
 button {
   position: relative;
-  z-index: 2; /* más alto */
+  z-index: 2; 
 }
 .eyes {
   position: absolute;
-  top: -30px;          /* empieza casi escondido */
+  top: -30px;         
   left: 50%;
   transform: translateX(-50%) translateY(30px);
   font-size: 24px;
-  transition: transform 0.5s ease; /* animación suave */
+  transition: transform 0.5s ease; 
 }
 
 .button-wrapper:hover .eyes {
@@ -153,3 +224,4 @@ button {
   width: 80px;
   height: 30px;
 }
+*/

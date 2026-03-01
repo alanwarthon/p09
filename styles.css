@@ -187,41 +187,14 @@ button:active {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-.button-wrapper {
-  position: relative;
-  display: inline-block;
-}
-button {
-  position: relative;
-  z-index: 2; 
-}
-.eyes {
-  position: absolute;
-  top: -30px;         
-  left: 50%;
-  transform: translateX(-50%) translateY(30px);
-  font-size: 24px;
-  transition: transform 0.5s ease; 
 }
 
-.button-wrapper:hover .eyes {
-  transform: translateX(-50%) translateY(0);
-}
 
-#ojo{
-  width: 80px;
-  height: 30px;
-}
-*/
+
+
+
+
+
+
+
+
